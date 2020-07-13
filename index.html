@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Dain's park app">
+    <title>Park search</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1>National Parks Search</h1>
+      <form>
+          <p><label for="state">Enter the two letter state code(s) for the states you want to search separating each</p> <p>additional code with a comma "," and no space:</label>
+          <input class="state" name="state" placeholder="WY,CO"></p>
+          <p><label for="resultsNum">Maximum number of parks to display:</label>
+          <input class="resultsNum" name="resultsNum" type="number" value="10" min="1">
+          <input type="submit"></p>
+      </form>
+      <p class="error"></p>
+      <section>
+        <div id="search-results"></div>
+      </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
